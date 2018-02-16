@@ -25,16 +25,10 @@ end
 end
 
 def printer(array)
-  badges = batch_badge_creator(array)
-  rooms = assign_rooms(array)
-  counter1 = 0
-  counter2 = 0
-     badges.each do |person|
-      puts badges[counter1]
-      counter1 += 1
+     batch_badge_creator(array).each_with_index do |person, i|
+      puts batch_badge_creator(array)[i]
     end
-    rooms.each do |person|
-      puts rooms[counter2]
-      counter2 += 1
+    assign_rooms(array).each_with_index do |person, i|
+      puts assign_rooms(array)[i]
     end
 end
