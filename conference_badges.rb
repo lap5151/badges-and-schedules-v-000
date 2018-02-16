@@ -24,8 +24,7 @@ end
   return new_array
 end
 
-def printer(attendee)
-  attendee.each do |attendee|
+def printer(array)
     puts batch_badge_creator(array)
     puts assign_rooms(array)
   end
