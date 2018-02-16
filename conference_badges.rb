@@ -2,6 +2,10 @@ def name_array
   ["Edsger", "Ada", "Charles", "Alan, Grace", "Linus", "Matz"]
 end
 
+def badge_maker(name)
+  puts "Hello, my name is Arel."
+end
+
 def batch_badge_creator(array)
     new_array = []
     array.each do |person|
