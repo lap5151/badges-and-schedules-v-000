@@ -25,6 +25,17 @@ end
 end
 
 def printer(array)
-    return batch_badge_creator(array)
-    return assign_rooms(array)
+  badges = batch_badge_creator(array)
+  rooms = assign_rooms(array)
+  counter1 = 0
+  counter2 = 0
+     badges.each do |person|
+      puts badges[counter1]
+      counter1 += 1
+    end
+    rooms.each do |person|
+      puts rooms[counter2]
+      counter2 += 1 
+    end
 end
+
